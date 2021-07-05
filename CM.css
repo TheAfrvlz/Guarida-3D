@@ -66,7 +66,7 @@
 }
 
 
-@media all and (max-width: 600px){
+@media (max-width: 600px){
     .Contenido-C{
         display: flex;
         margin-top: 10px;
