@@ -123,8 +123,7 @@ color: rgba(78, 78, 78, 0.507);
 
 }
 
-@media only screen and (max-width: 
-400px) {
+@media only screen and (max-width: 500px) {
 
     *, *::after, *::before {
         box-sizing: border-box;
