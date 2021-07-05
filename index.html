@@ -41,8 +41,7 @@
                 {
                     models:
                     [
-                        {filename:"Component5.stl", color:"#237a57"}
-
+                        {filename:"Component5.stl", color:"#FFB75E" ,rotationx:0.6,rotationy:0.6}
                     ]
                 }
             );
@@ -79,8 +78,21 @@
 
       </div>
       <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
+        <h1>Google Home Pared</h1>
+        <div id="stl_cont1" ></div>      
+        <script>
+            var stl_viewer=new StlViewer
+            (
+                document.getElementById("stl_cont1"),
+                {
+                    models:
+                    [
+                        {filename:"GoogleHomeMini.stl", color:"#FFB75E",scale:1,rotationx:0.2,rotationy:0.6}
+                    ]
+                }
+            );
+        </script>
+
         <button  class="explore-button myBTN"> Comprar </button>
         <div id="simple-Modal" class="modal">
           <div class="modal-content">
