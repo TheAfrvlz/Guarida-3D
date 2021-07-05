@@ -65,8 +65,7 @@
     margin-left: -10px;
 }
 
-
-@media all and (max-width: 600px){
+@media only screen and (min-width: 600px){
     .Contenido-C{
         display: flex;
         margin-top: 10px;

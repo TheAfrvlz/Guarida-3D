@@ -50,7 +50,7 @@
 }
 
 
-@media all and (max-width: 600px){
+@media only screen and (min-width: 600px){
   .fa-facebook {
     background: #3b5998;
     color: white;
