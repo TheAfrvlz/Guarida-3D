@@ -148,14 +148,17 @@ color: rgba(78, 78, 78, 0.507);
     }
     
     #stl_cont {
-        margin-left: 25%;
-        width:140px;
+        margin-left: 0px;
+        width:100px;
         height:90px;
+        margin-bottom: 15px;
     }
     #stl_cont1{
-        margin-left: 25%;
-        width:140px;
-        height:150px;
+        margin-top: 25px;
+        margin-left: 15px;
+        margin-bottom: 0px;
+        width:100px;
+        height:90px;
     }
     #Menu {
         display: flex;
