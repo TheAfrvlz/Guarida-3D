@@ -65,7 +65,78 @@
     margin-left: -10px;
 }
 
-@media only screen and (min-width: 280px) and (max-width: 800px){
+@media only screen and (min-width: 381px ) and (max-width: 800px){
+    .Contenido-C{
+        display: flex;
+        margin-top: 10px;
+        margin-left: 5px;
+    }
+    .C1{
+        width: 50px;
+        height: 15px;
+        margin-top: 10px;
+        background-color: rgba(228, 24, 24, 0.842);
+        border-radius: 5px;
+    }
+    .C2{
+        width: 50px;
+        height: 15px;
+        margin-top: 10px;
+        background-color: rgba(255, 255, 0, 0.788);
+        border-radius: 5px;
+    }
+    .C3{
+        width: 50px;
+        height: 15px;
+        margin-top: 10px;
+        background-color: rgba(29, 43, 170, 0.719);
+        border-radius: 5px;
+    }
+    .C4{
+        width: 50px;
+        height: 15px;
+        margin-top: 10px;
+        background-color: rgba(39, 160, 55, 0.692);
+        border-radius: 5px;
+    }
+    .Lista-M{
+        justify-content: center;
+        font-size: 25px;
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;    margin-left: 60px;
+    }
+    .C{
+        margin-left: 25px;
+    }
+    .Lista-C{
+        justify-content: center;
+    }
+    
+    .Lista-M h3{
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        font-size: 15px;
+        padding:0px;
+        text-align: left;
+        margin-left: 15px;
+        margin-top: 10px;
+        margin-bottom: 4px;
+    }
+    .Contenido-C{
+        color: white;
+        font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+    .especificaciones{
+        font-size: 20px;
+        margin-left: 0px;
+        margin-right: 10px;
+    }
+    .especificaciones1{
+        font-size: 20px;
+    }
+    
+}
+
+@media only screen and (max-width: 380px){
     .Contenido-C{
         display: flex;
         margin-top: 10px;
