@@ -96,10 +96,16 @@ color: rgba(78, 78, 78, 0.507);
 
 }
 #stl_cont {
+    margin-left: 25%;
     width:250px;
     height:220px;
-    margin:0 auto;
 }
+#stl_cont1{
+    margin-left: 25%;
+    width:250px;
+    height:220px;
+}
+
 .explore-button:hover {
     box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
     transform: translateY(-1px);
@@ -127,7 +133,7 @@ color: rgba(78, 78, 78, 0.507);
 
 }
 
-@media only screen and (min-width: 380px) and (max-width: 500px){
+@media only screen and (min-width: 381px) and (max-width: 600px){
 
     *, *::after, *::before {
         box-sizing: border-box;
@@ -144,9 +150,14 @@ color: rgba(78, 78, 78, 0.507);
     }
     
     #stl_cont {
+        margin-left: 25%;
         width:140px;
         height:90px;
-        margin:0 auto;
+    }
+    #stl_cont1{
+        margin-left: 25%;
+        width:140px;
+        height:150px;
     }
     #Menu {
         display: flex;
@@ -235,6 +246,144 @@ color: rgba(78, 78, 78, 0.507);
         margin-left: 2em;
         margin-right: .6em;
     
+    }
+    
+    .explore-button:hover {
+        box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+        transform: translateY(-1px);
+        color: #111111;
+    }
+    
+    .Producto_ima{
+        display: block;
+        margin-top: 2.5em;
+        margin-left: auto;
+        margin-right: auto;
+        width: 85%;
+    }
+    
+    .Categorias{
+        padding-top: 20px;
+        text-align: center;
+        text-decoration: none;
+        font-size: 10px;
+        color: white;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    
+    }
+    
+}
+@media only screen and (max-width: 380px){
+
+    *, *::after, *::before {
+        box-sizing: border-box;
+      }
+    
+    html,body{
+        /*background: -moz-linear-gradient(180deg,#0f2027,#203a43,#2c5364);*/
+        /*background: -moz-linear-gradient(180deg,#0f0c29,#302b63,#24243e);*/
+        /*background: -moz-linear-gradient(180deg,#000428,#302b63,#004e92);*/
+        background: -moz-linear-gradient(180deg,#004ff9,#fff94c);
+        height:100%; 
+        margin:0;
+        padding:0;
+    }
+    
+    #stl_cont {
+        margin-left: 25%;
+        width:50px;
+        height:50px;
+        margin-bottom: 0px;
+    }
+    #stl_cont1{
+        margin-right: 35px;
+        width:50px;
+        height:50px;
+    }
+
+    #Menu {
+        display: flex;
+        align-content: flex-start;
+        background-color: rgba(255, 255, 255, 0.651);
+        padding-bottom: 25px;
+    }
+    .Color{
+    Color:#004e92;
+    }
+    
+    #MenuI {
+        text-decoration: none;
+        font-size: 9px;
+        margin-right: 5px;
+        font-family: 'Noto Sans JP', sans-serif;
+        text-align: center;
+    }
+    
+    #Navegacion{
+        
+        margin-left: 50%;
+        padding-top: 2.5rem;
+        padding-bottom: 0px;
+        margin-bottom: 0;
+        justify-content: space-between;
+    }
+    
+    #MenuI:hover{
+    color: rgba(78, 78, 78, 0.507);
+    }
+    
+    #logo{
+        position: absolute;
+        font-size: 1.1rem;
+        text-decoration:none;
+        Color:#173c8b;
+        font-family: 'Permanent Marker', cursive;
+        margin-top: 50px;
+        margin-left: 15px;
+    }
+    
+    .espacio{
+        margin-left: 25px;
+        margin-right: 75px;
+    }
+    
+    .contenido{
+        display: flex;
+        margin-top: 20px;
+        margin-bottom: 50px;
+    }
+    
+    .prod{
+        margin-right: 20px;
+        width: 33%;
+        justify-content: center;
+         text-align: justify;
+         color: white;
+         font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    }
+
+    .prod h1{
+        font-size: 10px;
+        text-align: center;
+        font-family: 'Noto Sans JP', sans-serif;
+    }
+
+    .explore-button {
+        font-size: 0.6em;
+        background: white;
+        padding-right: 65px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        margin-left: 0px;
+        color: #504d4d;
+        display: inline-block;
+        margin-top: 4em;
+        border-radius: 2.5em;
+        text-align: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+        transition: color 0.6s, box-shadow 0.3s, transform 0.3s;
     }
     
     .explore-button:hover {
