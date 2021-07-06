@@ -135,9 +135,7 @@ color: rgba(78, 78, 78, 0.507);
 
 @media only screen and (min-width: 381px) and (max-width: 600px){
 
-    *, *::after, *::before {
-        box-sizing: border-box;
-      }
+
     
     html,body{
         /*background: -moz-linear-gradient(180deg,#0f2027,#203a43,#2c5364);*/
