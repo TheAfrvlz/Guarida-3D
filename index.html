@@ -19,7 +19,7 @@
   </head>
   <body>
     <div id="Menu">
-      <a id="logo"  href=""> La Guarida 3D </a>
+      <a id="logo"  href=""> Moebius 3D </a>
       <nav id="Navegacion">
         <a id="MenuI" class="Color" href="#foot">Anuncios</a>
         <a id="MenuI" class="Color" href="">Letreros Led</a>
@@ -39,6 +39,10 @@
             (
                 document.getElementById("stl_cont"),
                 {
+                  auto_rotate:true,
+                    bgcolor:"#20FAAC",
+                    allow_drag_and_drop:true,
+                    auto_resize:false,
                     models:
                     [
                         {filename:"Component5.stl", color:"#005C97" ,rotationx:0.6,rotationy:0.6}
@@ -85,9 +89,14 @@
             (
                 document.getElementById("stl_cont1"),
                 {
+                  auto_rotate:true,
+                    bgcolor:"#20FAAC",
+                    allow_drag_and_drop:true,
+                    auto_resize:false,
+                    zoom:-.01,
                     models:
                     [
-                        {filename:"GoogleHomeMini.stl", color:"#005C97",rotationx:0.2,rotationy:0.6,scale:0.5}
+                        {filename:"GoogleHomeMini.stl", color:"#005C97",rotationx:0.2,rotationy:0.6,scale:.1}
                     ]
                 }
             );

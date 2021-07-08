@@ -1,3 +1,4 @@
+@media only screen and (min-width: 961px) {
 .modal {
     display: none;
     position: fixed;
@@ -65,8 +66,8 @@
   text-decoration: none;
 
 }
-
-@media screen and (min-width: 381px) and (max-width: 800px){
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   .modal {
     display: none;
     position: fixed;
@@ -138,7 +139,7 @@
 
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px) {
   .modal {
     display: none;
     position: fixed;

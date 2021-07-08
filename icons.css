@@ -1,3 +1,5 @@
+
+@media only screen and (min-width: 961px) {
 .fa-facebook {
   background: #3b5998;
   color: white;
@@ -49,8 +51,8 @@
   padding-top: 0px;
 }
 
-
-@media screen and (min-width: 381px) and (max-width: 800px){
+}
+@media only screen and (min-width: 401px) and (max-width: 960px) {
   .fa-facebook {
     background: #3b5998;
     color: white;
@@ -102,7 +104,7 @@
   
 }
 
-@media only screen and (max-width: 380px){
+@media only screen and (max-width: 400px) {
 
   .fa-facebook {
     background: #3b5998;
