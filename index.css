@@ -6,7 +6,7 @@ html,body{
     /*background: -moz-linear-gradient(180deg,#0f2027,#203a43,#2c5364);*/
     /*background: -moz-linear-gradient(180deg,#0f0c29,#302b63,#24243e);*/
     /*background: -moz-linear-gradient(180deg,#000428,#302b63,#004e92);*/
-    background: -moz-linear-gradient(180deg,#004ff9,#fff94c);
+    background: -moz-linear-gradient(180deg, #0c3483 , #a2b6df , #6b8cce );
     height:100%; 
     margin:0;
     padding:0;
@@ -31,10 +31,8 @@ Color:#004e92;
 
 #Navegacion{
     
-    margin-left: 45%;
+    margin-left: 55%;
     padding-top: 3.5rem;
-    padding-bottom: 0px;
-    margin-bottom: 0;
     justify-content: space-between;
 }
 
@@ -97,12 +95,12 @@ color: rgba(78, 78, 78, 0.507);
 }
 #stl_cont {
     margin-left: 20%;
-    width:250px;
+    width:220px;
     height:220px;
 }
 #stl_cont1{
     margin-left: 17%;
-    width:250px;
+    width:220px;
     height:220px;
 }
 
@@ -132,39 +130,66 @@ color: rgba(78, 78, 78, 0.507);
      font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
 
 }
+footer{
+    background-color: #fff;
+}
+.Cont{
+    display: flex;
+}
+.Sp{
+    margin-left: 300px;
+}
+.Enlace{
+    font-size: 35px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+}
+.Menu{
+    font-size: 20px;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+      display: flex;
+}
+.Menu  li a{
+    text-decoration: none;
+    list-style-type: none;
+}
+ul{
+    list-style-type:none;
+}
+
 }
 @media only screen and (min-width: 401px) and (max-width: 960px) {
 
 
     
     html,body{
-        /*background: -moz-linear-gradient(180deg,#0f2027,#203a43,#2c5364);*/
-        /*background: -moz-linear-gradient(180deg,#0f0c29,#302b63,#24243e);*/
-        /*background: -moz-linear-gradient(180deg,#000428,#302b63,#004e92);*/
-        background: -moz-linear-gradient(180deg,#004ff9,#fff94c);
+        background: -moz-linear-gradient(180deg, #0c3483 , #a2b6df , #6b8cce );
         height:100%; 
         margin:0;
         padding:0;
     }
     
     #stl_cont {
-        margin-left: 0px;
-        width:100px;
-        height:90px;
+        margin-left: 30px;
+        width:150px;
+        height:150px;
         margin-bottom: 15px;
     }
     #stl_cont1{
         margin-top: 25px;
         margin-left: 15px;
         margin-bottom: 0px;
-        width:100px;
-        height:90px;
+        width:150px;
+        height:150px;
     }
+    
     #Menu {
         display: flex;
         align-content: flex-start;
         background-color: rgba(255, 255, 255, 0.651);
         padding-bottom: 50px;
+        margin-bottom: 0px;
     }
     .Color{
     Color:#004e92;
@@ -276,33 +301,25 @@ color: rgba(78, 78, 78, 0.507);
 }
 @media only screen and (max-width: 400px) {
 
-    *, *::after, *::before {
-        box-sizing: border-box;
-      }
-    
     html,body{
-        /*background: -moz-linear-gradient(180deg,#0f2027,#203a43,#2c5364);*/
-        /*background: -moz-linear-gradient(180deg,#0f0c29,#302b63,#24243e);*/
-        /*background: -moz-linear-gradient(180deg,#000428,#302b63,#004e92);*/
-        background: -moz-linear-gradient(180deg,#004ff9,#fff94c);
+        background: -moz-linear-gradient(180deg, #0c3483 , #a2b6df , #6b8cce );
         height:100%; 
         margin:0;
         padding:0;
     }
     
     #stl_cont {
-        margin-left: 0px;
-        width:100px;
-        height:90px;
-        margin-bottom: 15px;
+        width:5.5rem;
+        height:5.6rem;
+        margin-bottom: 18px;
     }
     
-    #stl_cont1{
+    #stl_cont1{     
+        width:5.5rem;
+        height:5.6rem;
         margin-top: 25px;
-        margin-left: 15px;
+        margin-left: 0px;
         margin-bottom: 0px;
-        width:100px;
-        height:90px;
     }
 
     #Menu {
@@ -311,6 +328,7 @@ color: rgba(78, 78, 78, 0.507);
         background-color: rgba(255, 255, 255, 0.651);
         padding-bottom: 25px;
     }
+    
     .Color{
     Color:#004e92;
     }
@@ -358,8 +376,8 @@ color: rgba(78, 78, 78, 0.507);
     }
     
     .prod{
-        margin-right: 20px;
         width: 33%;
+        margin:15px;
         justify-content: center;
          text-align: justify;
          color: white;
@@ -375,13 +393,14 @@ color: rgba(78, 78, 78, 0.507);
     .explore-button {
         font-size: 0.6em;
         background: white;
-        padding-right: 65px;
+        padding-top: 10px;
+        padding-right: 10px;
         padding-left: 10px;
         padding-bottom: 10px;
         margin-left: 0px;
         color: #504d4d;
         display: inline-block;
-        margin-top: 4em;
+        margin-top: 2em;
         border-radius: 2.5em;
         text-align: center;
         text-transform: uppercase;
