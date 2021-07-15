@@ -3,1001 +3,1032 @@
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="shortcut icon" href="Guarida.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="shortcut icon" href="Guarida.png" /> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link rel="stylesheet" href="index.css" />
     <link rel="stylesheet" href="icons.css" />
     <link rel="stylesheet" href="button.css" />
     <link rel="stylesheet" href="CM.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap" rel="stylesheet" />
-    <link href="https://fonts.googleapis.com/css2?family=Lobster&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="Animacion.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Permanent+Marker&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lobster&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="superslides.css" />
     <script defer src="script.js"></script>
-    <title> Guarida 3D | Jesus's Lab </title>
+    <title>La Guarida 3D</title>
   </head>
   <body>
     <div id="Menu">
-      <a id="logo"  href=""> La Guarida 3D </a>
+      <a id="logo" href="">La Guarida 3D </a>
       <nav id="Navegacion">
         <a id="MenuI" class="Color" href="#foot">Anuncios</a>
-        <a id="MenuI" class="Color" href="">Letreros Led</a>
-        <a id="MenuI" class="Color" href="">Accesorios</a>
-        <a id="MenuI" class="Color" href="">Adornos</a>
-        <a id="MenuI" class="Color" href="https://avelz19.github.io/Afran-s-Lab/">Proyectos</a>
+        <a id="MenuI" class="Color" href="">Kits</a>
+        <a id="MenuI" class="Color" href="">Catalogo</a>
+        <a id="MenuI" class="Color" href="">Repuestos</a>
+        <a id="MenuI" class="Color" href="#foot">Contacto</a>
       </nav>
     </div>
-    <div class= "Categorias"><h1>Accesorios</h1></div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <div id="stl_cont" ></div>
-        <script src="stl_viewer.min.js"></script>        
-        <script>
-            var stl_viewer=new StlViewer
-            (
-                document.getElementById("stl_cont"),
-                {
-                    models:
-                    [
-                        {filename:"Component5.stl", color:"#005C97" ,rotationx:0.6,rotationy:0.6}
-                    ]
-                }
+    <div id="slides">
+      <ul class="slides-container">
+        <li><img src="im1.jpg" alt="" /></li>
+        <li><img src="im2.jpg" alt="" /></li>
+        <li><img src="im3.jpeg" alt="" /></li>
+        <li><img src="im4.jpg" alt="" /></li>
+        <li><img src="im5.jpg" alt="" /></li>
+      </ul>
+      <nav class="slides-navigation">
+        <a href="" class="next">></a>
+        <a href="" class="prev"><</a>
+      </nav>
+    </div>
+    <script src="jquery.js"></script>
+    <script src="jquery.superslides.js"></script>
+
+    <div class="tienda">
+      <div class="Categorias"><h1>Accesorios</h1></div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <div id="stl_cont"></div>
+          <script src="stl_viewer.min.js"></script>
+          <script>
+            var stl_viewer = new StlViewer(
+              document.getElementById("stl_cont"),
+              {
+                auto_rotate: true,
+                bgcolor: "#20FAAC",
+                allow_drag_and_drop: true,
+                auto_resize: false,
+                models: [
+                  {
+                    filename: "Component5.stl",
+                    color: "#c31432",
+                    rotationx: 0.6,
+                    rotationy: 0.6,
+                  },
+                ],
+              }
             );
-        </script>
+          </script>
 
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-
-      </div>
-      <div class="prod">
-        <h1>Google Home Pared</h1>
-        <div id="stl_cont1" ></div>      
-        <script>
-            var stl_viewer=new StlViewer
-            (
-                document.getElementById("stl_cont1"),
-                {
-                    models:
-                    [
-                        {filename:"GoogleHomeMini.stl", color:"#005C97",rotationx:0.2,rotationy:0.6,scale:0.5}
-                    ]
-                }
+        <div class="prod">
+          <h1>Google Home Pared</h1>
+          <div id="stl_cont1"></div>
+          <script>
+            var stl_viewer = new StlViewer(
+              document.getElementById("stl_cont1"),
+              {
+                auto_rotate: true,
+                bgcolor: "#20FAAC",
+                allow_drag_and_drop: true,
+                auto_resize: false,
+                zoom: -0.01,
+                models: [
+                  {
+                    filename: "GoogleHomeMini.stl",
+                    color: "#c31432",
+                    rotationx: 0.2,
+                    rotationy: 0.6,
+                    scale: 0.1,
+                  },
+                ],
+              }
             );
-        </script>
+          </script>
 
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="prod">
-        <h1>Contro Xbox One</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
-              </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
-            </div>
-          </div>
-        </div>
-      </div>
-
-
-
-    </div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
-              </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
-              </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Contro Xbox One</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class= "Categorias"><h1>Accesorios</h1></div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="Categorias"><h1>Accesorios</h1></div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class= "Categorias"><h1>Accesorios</h1></div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="Categorias"><h1>Accesorios</h1></div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
-      </div>
-
-
-
-    </div>
-    <div class="contenido espacio">
-      <div class="prod">
-        <h1>Google Home Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 1</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
 
-      </div>
-      <div class="prod">
-        <h1>Xbox One S Stand</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 2</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
               </div>
-            </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
+      <div class="contenido espacio">
+        <div class="prod">
+          <h1>Google Home Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
 
-      <div class="prod">
-        <h1>Stand Reloj</h1>
-        <img class="Producto_ima" src="JP3D.png" />
-        <button  class="explore-button myBTN"> Comprar </button>
-        <div id="simple-Modal" class="modal">
-          <div class="modal-content">
-            <div class="header-C">
-              <div class="producto">Producto 3</div>
-              <span class="closeBTN">&times;</span>
-            </div>
-            <div class="Contenido-C">
-              <div class="Lista-C">
-                <div class="especificaciones">Colores</div> 
-                <div class="C C1"></div>
-                <div class="C C2"></div>
-                <div class="C C3"></div>
-                <div class="C C4"></div>
-                <div class="C C5"></div>
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 1</div>
+                <span class="closeBTN">&times;</span>
               </div>
-              <div class="Lista-M">
-                <div class="especificaciones1"> Materiales</div>
-                <h3>PLA</h3>
-                <h3>PETG</h3>
-                <h3>ABS</h3>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
+              </div>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
               </div>
             </div>
-            <div class="Contenido-F">
-              <a class="Pago" href="">Formas de Pago</a>
+          </div>
+        </div>
+        <div class="prod">
+          <h1>Xbox One S Stand</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 2</div>
+                <span class="closeBTN">&times;</span>
+              </div>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
+              </div>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="prod">
+          <h1>Stand Reloj</h1>
+          <img class="Producto_ima" src="JP3D.png" />
+          <button class="explore-button myBTN">Comprar</button>
+          <div id="simple-Modal" class="modal">
+            <div class="modal-content">
+              <div class="header-C">
+                <div class="producto">Producto 3</div>
+                <span class="closeBTN">&times;</span>
+              </div>
+              <div class="Contenido-C">
+                <div class="Lista-C">
+                  <div class="especificaciones">Colores</div>
+                  <div class="C C1"></div>
+                  <div class="C C2"></div>
+                  <div class="C C3"></div>
+                  <div class="C C4"></div>
+                  <div class="C C5"></div>
+                </div>
+                <div class="Lista-M">
+                  <div class="especificaciones1">Materiales</div>
+                  <h3>PLA</h3>
+                  <h3>PETG</h3>
+                  <h3>ABS</h3>
+                </div>
+              </div>
+              <div class="Contenido-F">
+                <a class="Pago" href="">Formas de Pago</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-
-
-
     </div>
   </body>
-
   <footer>
+    <h1 class="Nombre">La Guarida 3D</h1>
+    <div class="Cont">
+      <div class="Sp Enlace">About</div>
+      <div class="Sp Menu">
+        Enlaces
+        <ul>
+          <li><a href="">Kits</a></li>
+          <li><a href="">Catalogo</a></li>
+          <li><a href="">Repuestos</a></li>
+          <li><a href="#foot">Contacto</a></li>
+        </ul>
+      </div>
+      <div class="Sp contacto">
+        Contacto Correo Electronico
+        <p>
+          Correo Electronico <br />
+          Jvelez13Soto@outlook.com <br />
+          Tel: 2227142973 <br />
+          10 Oriente Col. Centro Edificio Siglo XXI Atlixco,Puebla
+        </p>
+      </div>
+    </div>
+
     <div id="foot" class="espace">
-      <h1 class="titulo">Design you own dreams</h1>
+      <h1 class="titulo">Copyright 2021 La Guarida 3D</h1>
       <a href="#" class="fa fa-facebook"></a>
       <a href="#" class="fa fa-instagram"></a>
       <a href="#" class="fa fa-youtube-play"></a>
