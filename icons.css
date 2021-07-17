@@ -4,29 +4,33 @@
 .fa-facebook {
   background: #3b5998;
   color: white;
+  font-size:20px;
 }
 .fa-instagram {
   background: #125688;
   color: white;
+  font-size:20px;
 }
 .fa-youtube-play {
   background: #bb0000;
   color: white;
+  font-size:20px;
 }
 
 .fa-github {
   background: gray;
   color: white;
+  font-size:20px;
 }
 
 .fa {
-  border-radius: 40px;
+
   padding-right: 20px;
   padding-left: 20px;
-  padding-bottom: 5px;
+  padding-bottom: 20px;
   padding-top:20px;
   margin-right: 15px;
-  font-size:20px;
+  margin-left: 15px;
   text-align: center;
   text-decoration: none;
 }
@@ -36,7 +40,7 @@
 }
 
 .espace {
-  background-color: rgba(255, 250, 250, 0.822);
+
   display: flex;
   justify-content: right;
   padding-top: 50px;
@@ -45,7 +49,7 @@
 }
 
 .titulo{
-  color: #004e92;
+  color: #e9e9e9;
   font-size: 35px;
   margin-bottom: 0;
   font-family: 'Noto Sans', sans-serif;

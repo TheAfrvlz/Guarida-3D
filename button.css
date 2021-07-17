@@ -50,6 +50,25 @@
   .Contenido-F {
     margin-top: 25px;
   }
+  .Descarga{
+    font-size: 0.9em;
+    margin-left: 40%;
+    margin-top: 50px;
+    padding-top: 15px;
+    padding-left: 50px;
+    padding-right: 50px;
+    padding-bottom: 15px;
+    border-radius: 35px;
+    box-shadow: 0 15px 20px -10px rgba(0, 0, 0, 0.3);
+    color: #807878;
+    font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+      sans-serif;
+  }
+  .Descarga:hover {
+    box-shadow: 0 3px 5px -5px rgba(0, 0, 0, 0.3);
+    transform: translateY(-1px);
+  }
+
   .Pago {
     color: black;
     padding: 10px 10px;
